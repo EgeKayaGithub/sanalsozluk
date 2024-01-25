@@ -1,0 +1,151 @@
+.ilkparca{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 860px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(arkaplan.jpg);
+    background-size: cover;
+}
+.basyazi{
+    color: white;
+    font-weight: 700;
+    margin-top: -350px;
+    letter-spacing: 10px;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.6);
+    font-size: 55px;
+    border-bottom: 4px solid blue;
+    font-family: 'Futura Primer', sans-serif;
+    padding: 10px;
+}
+.arayazi{
+    position: absolute;
+    margin-top: -190px;
+    font-size: 40px;
+    color: white;
+    letter-spacing: 2px;
+    text-shadow: -5px 4px 9px rgba(0,0,0,0.6);
+    font-family: 'KG HAPPY Solid', sans-serif;
+}
+#anabuton{
+    margin-left: -405px;
+    margin-top: -40px;
+    width: 200px;
+    height: 75px;
+    font-size: 21px;
+    font-family: 'Futura Primer', sans-serif;
+    position: absolute;
+}
+
+@media screen and (max-width: 1187px) {
+    .arayazi{
+        margin-top: -180px;
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .basyazi{
+        font-size: 50px;
+    }
+    .arayazi{
+        margin-top: -180px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 994px) {
+    .basyazi{
+        font-size: 45px;
+    }
+    .arayazi{
+        margin-top: -180px;
+        font-size: 25px;
+    }
+    #anabuton{
+        margin-left: -365px;
+    }
+}
+@media screen and (max-width: 530px) {
+    .basyazi{
+        font-size: 39px;
+        border-bottom: 3px solid blue;
+    }
+    .arayazi{
+        margin-top: -180px;
+        font-size: 25px;
+    }
+    #anabuton{
+        margin-left: -330px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .basyazi{
+        font-size: 33px;
+        border-bottom: 3px solid blue;
+    }
+    .arayazi{
+        margin-top: -180px;
+        font-size: 25px;
+    }
+    #anabuton{
+        margin-left: -300px;
+    }
+}
+@media screen and (max-width: 422px) {
+    .basyazi{
+        font-size: 27px;
+        border-bottom: 3px solid blue;
+    }
+    .arayazi{
+        margin-top: -190px;
+        font-size: 21px;
+    }
+    #anabuton{
+        margin-left: -285px;
+    }
+}
+@media screen and (max-width: 392px) {
+    .basyazi{
+        font-size: 26px;
+        border-bottom: 3px solid blue;
+    }
+    .arayazi{
+        margin-top: -200px;
+        font-size: 20px;
+    }
+    #anabuton{
+        margin-left: -275px;
+    }
+}
+@media screen and (max-width: 357px) {
+    .basyazi{
+        font-size: 24px;
+        border-bottom: 3px solid blue;
+    }
+    .arayazi{
+        margin-top: -200px;
+        font-size: 18px;
+    }
+    #anabuton{
+        margin-left: -265px;
+    }
+}
+@media screen and (max-width: 295px) {
+    .basyazi{
+        font-size: 22px;
+        border-bottom: 3px solid blue;
+    }
+    .arayazi{
+        margin-top: -200px;
+        font-size: 17px;
+    }
+    #anabuton{
+        margin-left: -265px;
+    }
+}
+
+
+
+
+
+

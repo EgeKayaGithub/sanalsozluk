@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanal Sözlük</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="stylesheet" href="ortak.css">
+    <link rel="stylesheet" href="oyun.css">
+    <link rel="stylesheet" href="extra.css">
+</head>
+<body> 
+<audio src="arkafonmuzik.MP3" id="arkaFonMuzik"></audio>
+<div class="soruinfo">
+  <div class="progress ilerlemeBari animate__animated animate__fadeInDownBig">
+    <h2 class="progressbaslik">İlerleme Seviyesi</h2>
+    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
+  </div>
+</div>
+
+<div class="sorucontainer animate__animated animate__fadeInDownBig">
+  <h2 class="soru">Soru Gelecek Alan</h2>
+
+</div>
+
+
+<div class="secenekcontainers">
+  <div class="secenekcontainer1">
+    <button class="secenekler animate__animated animate__fadeInLeftBig">Seçenek 1</button>
+    <button class="secenekler animate__animated animate__fadeInLeftBig">Seçenek 2</button>
+  </div>
+  <div class="secenekcontainer2">
+    <button class="secenekler animate__animated animate__fadeInRightBig">Seçenek 3</button>
+    <button class="secenekler animate__animated animate__fadeInRightBig">Seçenek 4</button>
+  </div>
+</div>
+</div>
+
+<div class="oyunsecenekleri">
+  <button class="sesacmakapama oyunsecenek animate__animated animate__fadeInBottomLeft" title="Ses Açma/Kapama" onclick="toggleSound()"><i class="fa-solid fa-volume-off"></i></button> <!-- !  <i class="fa-solid fa-volume-high"></i>-->
+  <button class="oyunsecenek animate__animated animate__fadeInBottomRight" title="Soruyu Atla" id="soruyuAtlaBtn"><i class="fa-solid fa-forward"></i></button>
+  <div class="sayac animate__animated animate__fadeInUp"><h2 id="sure">00:00</h2></div>
+  <div class="coingosterge animate__animated animate__fadeInBottomLeft">
+    <h2 id="coinSayisi" title="Para Miktarı">00000</h2>
+    <img src="coin.jpg" class="coinimg" alt="paraicon" title="Para Miktarı">  
+    <a href="#" onclick="cikisYapma()" class="animate__animated animate__fadeInBottomRight"><button class="cikisbuton" title="Çıkış Yap">Çıkış Yap</button></a>
+  </div>
+
+</div>z
+<script src="coin.js"></script>
+<script src="kelimesorular.js"></script>
+</body>
