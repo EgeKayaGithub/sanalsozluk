@@ -53,24 +53,7 @@ body{
     display: none;
 }
 
-@media screen and (max-width:850px) {
-    .navbar ul{
-        display: none;
-    }
-    .dropdownmenu{
-        display: flex;
-        margin-top: -20px;
-    }
-}
-@media screen and (max-width:460px) {
-    .logodiv{
-        display: none;
-    }
-    .navbar{
-        display: flex;
-        justify-content: center;
-    }
-}
+
 
 body::-webkit-scrollbar{
 
