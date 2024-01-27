@@ -45,15 +45,16 @@
 
 <h2 class="sugbaslik">Öneriniz mi var ?</h2>
 <div class="forum">
-<form action="https://formspree.io/f/mkndozdb" method="POST">
-    <input type="text" placeholder="İsim" class="inputlar">
-    <input type="email" placeholder="Email" class="inputlar">
-    <textarea placeholder="Öneriniz ve şikayetiniz"></textarea>
+<form action="https://formspree.io/f/mkndozdb"method="POST">
+    <input type="email" placeholder="E-posta adresiniz" class="inputlar" name="email">
+    <textarea placeholder="Öneriniz veya şikayetiniz ?" name="message"></textarea>
     <div class="gondermeTemizleme">    
-    <input type="reset" value="Temizle">
-    <input type="submit" name="" id="" value="Gönder">
+    <input type="reset" value="Temizle" class="GonderTemizleButon">
+    <input type="submit" name="submit" id="" value="Gönder" class="GonderTemizleButon">
     </div>
-
 </form>
+
+
+
 </div>
 </body>

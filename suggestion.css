@@ -1,54 +1,69 @@
-body{
-    background: url(subbackground.png);
-    background-size: cover;
-}
 .sugbaslik{
-    margin-left: 1050px;
+    margin-left: 610px;
     color: white;
     text-shadow: 11px 7px 8px rgba(0,0,0,0.52);
     margin-top: 60px;
-    font-size: 90px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-family: 'Futura Primer', sans-serif;
     font-weight: bold;
 }
 .forum{
-    width: 700px;
+    width: 600px;
     height: 400px;
-    margin-left: 1050px;
+    margin-top: 20px;
+    margin-left: 660px;
     display: inline-flex;
     justify-content: center;
     padding: 15px;
+    background-color: rgb(255, 170, 0);
+    border-radius: 15px;
+    transition: ease 0.4s;
+}   
+.forum:hover{
+    -webkit-box-shadow: -1px 2px 72px -11px rgba(255,255,255,1);
+    -moz-box-shadow: -1px 2px 72px -11px rgba(255,255,255,1);
+    box-shadow: -1px 2px 72px -11px rgba(255,255,255,1);
 }
 .inputlar{
     font-size: 23px;
     margin-top: 10px;
-    margin-left: 24%;
-    width: 340px;
+    margin-left: 14%;
+    font-family: 'SF Pro Display', sans-serif;  
+    width: 424px;
     background-color: #222222;
     border: none;
     border-radius: 5px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    border-radius: 13px;
 }
 textarea{
     font-size: 23px;
     margin-top: 20px;
-    margin-left: 17%;
+    margin-left: 14%;
     height: 150px;
-    width: 440px;
+    font-family: 'SF Pro Display', sans-serif;  
+    width: 424px;
     background-color: #222222;
     border: none;
-    border-radius: 5px;
     text-align: center;
     color: white;
+    border-radius: 15px 15px 0px 15px ;
 }
 .gondermeTemizleme{
-    width: 600px;
     position: absolute;
     justify-self: center;
-    height: 100px;
-    margin-left: 108px;
+    font-size: 22px;
+    margin-left: 67px;
     margin-top: 20px;
+    transition: 0.5s;
+}
+.GonderTemizleButon{
+    transition: ease 0.5s;
+}
+.GonderTemizleButon:hover{    
+    background-color: rgb(0, 195, 255);
+    transform: rotateZ(5deg);
 }
 .gondermeTemizleme input{
     width: 200px;
