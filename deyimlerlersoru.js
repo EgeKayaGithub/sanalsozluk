@@ -1,152 +1,137 @@
 let questions = [
     {
         question: "<span>''Açığa vurmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Belli etmek, ortaya çıkarmak.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Belli etmek, ortaya çıkarmak.", "Kalabalık bir ortamda dikkat çekmek.", "Herhangi bir şeyi vurgulamak.", "Bir özelliği açıkça göstermek."], 
         correct: "Belli etmek, ortaya çıkarmak."
     },
     {
         question: "<span>''Ağzına kilit vurmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Susmak veya susturmak.", "Seçenek 4"], 
+        options: ["Herhangi bir yerin girişini kapatmak.", "Bir kapıyı sertçe kilitlemek.", "Susmak veya susturmak.", "Kırıcı bir laf söyleyip kalp kırmak."], 
         correct: "Susmak veya susturmak."
     },
     {
-        question: "<span>''Başı bağlı''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Başı kapalı veya evli olan.", "Seçenek 3", "Seçenek 4"], 
-        correct: "Başı kapalı veya evli olan."
-    },
-    {
         question: "<span>''Boy ölçüşmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Seçenek 3", "Yarışmak, rekabete girmek."], 
+        options: ["Herhangi bir konuda karşılaştırma yapmak.", "Bir kimsenin boyu yüzünden yaşını büyük göstermesi.", "Boyundan ötürü saygı duymak.", "Yarışmak, rekabete girmek."], 
         correct: "Yarışmak, rekabete girmek."
     },
     {
         question: "<span>''Burnu sızlamak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Duygulanmak, üzülmek.", "Seçenek 3", "Seçenek 4"], 
+        options: ["Hasta olmak.", "Duygulanmak, üzülmek.", "İyi koku alabilmek.", "Burnu akmak."], 
         correct: "Duygulanmak, üzülmek."
     },
     {
         question: "<span>''Cebi delik''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Tutumlu olmayan kimse.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Tutumlu olmayan kimse.", "Cimri olan kimse.", "Fakir olan kimse.", "Çok zengin olan kimse."], 
         correct: "Tutumlu olmayan kimse."
     },
     {
         question: "<span>''Dalga geçmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Eğlenmek, alay etmek.", "Seçenek 4"], 
+        options: ["Biri ile iyi anlaşmak.", "Suyun içinde tehlikeli ve ölümcül hareketler yapmak.", "Eğlenmek, alay etmek.", "Su fışkırtmak."], 
         correct: "Eğlenmek, alay etmek."
     },
     {
         question: "<span>''El etek öpmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Seçenek 3", "Bir işi yaptırmak için çok yalvarmak."], 
+        options: ["Birisine çok saygı duymak.", "Birisine borçlanmak.", "Birisinden korkmak", "Bir işi yaptırmak için çok yalvarmak."], 
         correct: "Bir işi yaptırmak için çok yalvarmak."
     },
     {
         question: "<span>''Falso vermek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Bozulmaya yüz tutmak, açık vermek.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Bozulmaya yüz tutmak, açık vermek.", "Bir topu döndürerek yönünü değiştirmek.", "Suçüstünde yakalanmak.", "Bir kişiye sertçe vurmak."], 
         correct: "Bozulmaya yüz tutmak, açık vermek."
     },
     {
         question: "<span>''Iska geçmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Hedefe rast getirememek.", "Seçenek 3", "Seçenek 4"], 
+        options: ["Etrafa rastgele ateş etmek.", "Hedefe rast getirememek.", "Sertçe bir şey atmak.", "Çok sinirlenmek."], 
         correct: "Hedefe rast getirememek."
     },
     {
         question: "<span>''İç çekmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Seçenek 3", "Üzüntüyle derinden soluk almak."], 
+        options: ["Empati kurabilmek.", "Aniden çok güçlü hissetmek.", "Birine kızmak.", "Üzüntüyle derinden soluk almak."], 
         correct: "Üzüntüyle derinden soluk almak."
     },
     {
         question: "<span>''Kafasına takılmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Zihni bir şeyle sürekli olarak uğraşmak.", "Seçenek 4"], 
+        options: ["Herhangi bir şey düşünmeden çok uzun süre dalmak.", "Çok uzun ve zor bir soru çözmek.", "Zihni bir şeyle sürekli olarak uğraşmak.", "Bir konuda çok zorlanmak."], 
         correct: "Zihni bir şeyle sürekli olarak uğraşmak."
     },
     {
         question: "<span>''Kem gözle bakmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Kötü niyetle bakmak.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Kötü niyetle bakmak.", "İyi niyetle bakmak.", "Karamsar bakmak.", "Çok şaşırmak."], 
         correct: "Kötü niyetle bakmak."
     },
     {
         question: "<span>''Leyleği havada görmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Çok gezmek.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Çok gezmek.", "Kuş beslemek, kuşlarla ilgilenmek.", "Boynu tutulmak.", "Yüksek bir yerde yaşamak."], 
         correct: "Çok gezmek."
     },
     {
         question: "<span>''Madara etmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Kötü duruma düşürmek yanlışını ortaya çıkarmak.", "Seçenek 3", "Seçenek 4"], 
+        options: ["Çok yormak.", "Kötü duruma düşürmek yanlışını ortaya çıkarmak.", "Birini gıcık ederek sinir etmek.", "Çok üzerek rahatsız etmek."], 
         correct: "Kötü duruma düşürmek yanlışını ortaya çıkarmak."
     },
     {
         question: "<span>''Midesi kazınmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Seçenek 3", "Aç olmak."], 
+        options: ["Karnı ağrımak.", "Mide hastalığı olmak.", "İştahı olmamak.", "Aç olmak."], 
         correct: "Aç olmak."
     },
     {
         question: "<span>''Mukayyet olmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Korumak", "Seçenek 3", "Seçenek 4"], 
+        options: ["Başa bela olmak.", "Korumak", "Sorun çıkarmak.", "Çevrendeki insanları rahatsız etmek."], 
         correct: "Korumak"
     },
     {
         question: "<span>''Mürekkep yalamak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Çok okumuş, yazmış olmak.", "Seçenek 4"], 
+        options: ["Çok acıkmak.", "Çok bilmek.", "Çok okumuş, yazmış olmak.", "Uzun yaşamış olmak, çok bilmek, tecrübeli olmak."], 
         correct: "Çok okumuş, yazmış olmak."
     },
     {
-        question: "<span>''Nalları dikmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Ölmek", "Seçenek 4"], 
-        correct: "Ölmek"
-    },
-    {
         question: "<span>''Not düşmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Not almak.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Not almak.", "Bir yere rastgele bir şeyler çizmek.", "Bir yere bir şey hakkında kısa bir özet yazmak.", "Bir deftere yazmak."], 
         correct: "Not almak."
     },
     {
         question: "<span>''Omuz silkmek.''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Aldırmamak, değer vermemek.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Aldırmamak, değer vermemek.", "Önemsemek, ilgi göstermek.", "Dalga geçmek, alay etmek.", "Kızmak, gereksiz yere sinirlenmek."], 
         correct: "Aldırmamak, değer vermemek."
     },
     {
         question: "<span>''Ödü kopmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Çok korkmak.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        options: ["Çok korkmak.", "Korkudan bayılmak.", "Birini çok korkutmak.", "Çok gülmek."], 
         correct: "Çok korkmak."
     },
     {
         question: "<span>''Paniğe kapılmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Korkuya kapılmak.", "Seçenek 4"], 
+        options: ["Yanlış kararlar vermek", "Hızlıca hareket etmek.", "Korkuya kapılmak.", "Hata yapmak"], 
         correct: "Korkuya kapılmak."
     },
     {
         question: "<span>''Peşine takılmak.''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Seçenek 3", "Ardından gitmek."], 
+        options: ["Gizlice gözetlemek.", "Çevresinde dolanıp durmak.", "İyi arkadaş olmak.", "Ardından gitmek."], 
         correct: "Ardından gitmek."
     },
     {
-        question: "<span>''Ruhunu teslim etmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Ölmek", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
-        correct: "Ölmek"
-    },
-    {
         question: "<span>''Saçına ak düşmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Saçı beyazlamak.", "Seçenek 3", "Seçenek 4"], 
+        options: ["Torun sahibi olmak.", "Saçı beyazlamak.", "Çok okumuş, yazmış olmak.", "Delirmek, akılsızca davranmak."], 
         correct: "Saçı beyazlamak."
     },
     {
         question: "<span>''Saçını başını yolmak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Seçenek 3", "Üzüntüden dolayı dövünmek."], 
+        options: ["Boşu boşuna kendini hırpalamak.", "Çok sevinmek, sevinçten kendine zarar vermek.", "Sinirden karşındakini dövmek.", "Üzüntüden dolayı dövünmek."], 
         correct: "Üzüntüden dolayı dövünmek."
     },
     {
         question: "<span>''Şeşi beş görmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Yanlış görmek.", "Seçenek 4"], 
+        options: ["Çok iyi gözleri olmak.", "Yanlış anlamak.", "Yanlış görmek.", "Yanlış öğrenmek, yanlış öğretmek."], 
         correct: "Yanlış görmek."
     },
     {
         question: "<span>''Taban tepmek''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Seçenek 2", "Uzun yol yürümek.", "Seçenek 4"], 
+        options: ["Parası olmamak, fakir olmak.", "Çok uzun süre koşmak.", "Uzun yol yürümek.", "Mola vermeden spor yapmak."], 
         correct: "Uzun yol yürümek."
     },
     {
-        question: "<span>''umurunda olmamak''</span> <br> <br> Deyiminin anlamı nedir?",
-        options: ["Seçenek 1", "Aldırmamak", "Seçenek 3", "Seçenek 4"], 
+        question: "<span>''Umurunda olmamak''</span> <br> <br> Deyiminin anlamı nedir?",
+        options: ["İlgi göstermek, saygı duymak.", "Aldırmamak", "Nefret etmek.", "Dikkat çekmeye çalışmak."], 
         correct: "Aldırmamak"
     },
 

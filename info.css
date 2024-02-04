@@ -20,9 +20,18 @@ p{
     font-family: 'Albert Sans', sans-serif;
     margin-top: 25px;
 }
-a{
-    text-decoration: underline;
+.icerik2 p a,
+.icerik p a{
+    text-decoration: none;
     color: white;
+    border-bottom: 4px solid white;
+}
+.icerik2 p a:hover,
+.icerik p a:hover{
+    text-decoration: none;
+    transition: 0.2s;
+    color: rgb(38, 121, 231);
+    border-bottom: 4px solid rgb(38, 121, 231);;
 }
 .icerik{
     height: 345px;

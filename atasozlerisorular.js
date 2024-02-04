@@ -1,9 +1,99 @@
 let questions = [
     {
-        question: "<span>'' Bir elin nesi var, iki elin sesi var. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Aynı kuşaktan olan kimse.", "Kuşak", "Üstün nitelikli, değerli olan.", "Doğru, düzgün."], // ! Nesil
-        correct: "Kuşak"
-    }
+        question: "<span>'' Mühür kimde ise Süleyman odur. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Yetkili olanın namı iyidir.", "Bir işte yetki kimde ise kuvvet ondadır.", "Yetkili olmak kişiyi yoldan çıkarır.", "Bir yerdeki en yetkili kişi kendini önemli zanneder."], 
+        correct: "Bir işte yetki kimde ise kuvvet ondadır."
+    },
+    {
+        question: "<span>'' Ava giden avlanır . ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Bir işe girişen,o işin güçlüklerini veya masraflarını göze almalıdır.", "Her yapılan işin sorumlulukları vardır.", "Çıkarını başkalarına zarar vermekte arayan kimse, o zarara kendisi uğrar.", "insan sevdiği kimse veya sevdiği iş yüzünden gelecek sıkıntılara katlanır."], 
+        correct: "Çıkarını başkalarına zarar vermekte arayan kimse, o zarara kendisi uğrar."
+    },
+    {
+        question: "<span>'' İki cambaz bir ipte oynamaz. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır.", "Bir yerde birbirini sevmeyen iki kişi olması uygun değildir.", "İnsan ait olmadığı yerlerde bulunmamalıdır  ", "Kurnazlıkta eşit olan iki kimse birbirlerini aldatamaz "], 
+        correct: "Kurnazlıkta eşit olan iki kimse birbirlerini aldatamaz."
+    },
+    {
+        question: "<span>'' Etle tırnak arasına girilmez. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Aile anlaşmazlıklarında bir yanı tutmak doğru değildi.", "Kişi her işe burnunu sokmamalıdır.", "İnsan her ortama girmeye çalışmamalıdır.", "İnsanların arasını açmak doğru değildir."], 
+        correct: "Aile anlaşmazlıklarında bir yanı tutmak doğru değildi."
+    },
+    {
+        question: "<span>'' At ölür meydan kalır,yiğit ölür şan kalır. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Yaşarken iyi işler yapmalı, iyi bir ad bırakılmaya çalışılmalıdır.", "Herkes arkasında yaşarken vesile olduğu şeyleri bırakır.", "Ardımızda güzel şeyler bırakmak için yaşarken iyi işler yapmalıyız.", "Onurlu yaşamak öldükten sonra bile kişiye yarar sağlar."], 
+        correct: "Yaşarken iyi işler yapmalı, iyi bir ad bırakılmaya çalışılmalıdır."
+    },
+    {
+        question: "<span>'' Kaçan balık büyük olur. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Kişi değer verdiği bir şeyi kaybederse çok üzülür.", "Elinde küçük bir şey olsa bile kişi buna zarar gelirse çok durumu abartır.", "Elden kaçırılan fırsat gözde büyütülür.", "İnsanlar abartmayı severler."], 
+        correct: "Elden kaçırılan fırsat gözde büyütülür."
+    },
+    {
+        question: "<span>'' İğneyi kendine, çuvaldızı başkasına batır. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Kişi kendini diğer insanlardan üstün tutar. ", "Fazla düşünceli olmak kişiye zarar verir.", "Başkasına zarar verebilecek davranışlar yapılmamalıdır.", "Başkasına zararı dokunacak bir davranışı yapmadan önce iyi düşün, kendi kendini eleştir."], 
+        correct: "Başkasına zararı dokunacak bir davranışı yapmadan önce iyi düşün, kendi kendini eleştir."
+    },
+    {
+        question: "<span>'' Tavşan dağa küsmüş de dağın haberi olmamış. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Sevmediği biri o kişiye küserse kişinin umrunda olmaz.", "Önemsiz kişi, önemli kişiye küsse önemli kişinin umurunda bile olmaz.", "Kimse kimsenin umurunda değildir,herkes kendini düşünür.", "İnsanlar günlük hayattaki sorunlardan dolayı dünyadan bihaber olarak yaşar."], 
+        correct: "Önemsiz kişi, önemli kişiye küsse önemli kişinin umurunda bile olmaz."
+    },
+    {
+        question: "<span>'' Acemi katır kapı önünde yük indirir. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Beceriksiz ve anlayışsız kişi, kendisine yaptırılan işi en önemli yerinde bırakır.", "Tecrübesiz insanlar tecrübeliler kadar iyi olamazlar.", "Acemilik bir işi öğrenmenin ilk adımıdır.", "Beceriksiz insanlar ne yaparlarsa yapsın başarılı olamazlar."], 
+        correct: "Beceriksiz ve anlayışsız kişi, kendisine yaptırılan işi en önemli yerinde bırakır."
+    },
+    {
+        question: "<span>'' Ucuz etin yahnisi yavan olur. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Özensiz yapılan işin sonucu iyi olmaz.", "Bir şeyi özensiz yaparsak olumsuz eleştirilere maruz kalırız.", "Ucuza mal olan şeyler niteliksizdir.", "Nitelikli ve özenli iş yapmamak kişinin statüsünü zedeler."], 
+        correct: "Ucuza mal olan şeyler niteliksizdir."
+    },
+    {
+        question: "<span>'' Su testisi su yolunda kırılır. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Bir işin üzerinde fazla durulursa mutlaka bir sıkıntı çıkar.", "Bir iş yapmadan önce gerkeli tedbirleri almazsak zor duruma düşeriz.", "Bir işe kafayı çok takarsak asla başarılı olamayız.", "Bir kişi amaç edindiği işte kazaya uğrar."], 
+        correct: "Bir kişi amaç edindiği işte kazaya uğrar."
+    },
+    {
+        question: "<span>'' Minareyi çalan kılıfını hazırlar. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Kişi riskli bir işe kalkışmadan tedbirleri alır.", "Kolay kolay gizlenemeyecek bir kötülüğü yapan sorumluluktan kurtulma yollarını önceden düşünür.", "Kişi yapmaması gereken bir eylemde bulununca kaçmak için yer arar.", "yapılmaması gereken şey kolay gizlenemeyecek olduğunda kişinin bu durumdan kaçması zor olacaktır."], 
+        correct: "Kişi yapmaması gereken bir eylemde bulununca kaçmak için yer arar."
+    },
+    {
+        question: "<span>'' El elin eşeğini türkü çağırarak arar. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["İnsanın kendi sıkıntı ve sorunlarına başkaları gereken önemi vermez, gerektiği kadar ilgilenmez.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
+        correct: "İnsanın kendi sıkıntı ve sorunlarına başkaları gereken önemi vermez, gerektiği kadar ilgilenmez."
+    },
+    {
+        question: "<span>'' Yuvayı yapan dişi kuştur. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Güçlü olan kişi aynı zamanda ortamı idare eden kişidir.", "Bir ortamın lideri mutlaka en kuvvetli olandır.", "Evin kadını anlayışlı, idareci ve tutumlu olursa ancak o zaman evde dirlik düzenlik sağlanır.", "Dişiler ev halkını idare edenlerdir."], 
+        correct: "Evin kadını anlayışlı, idareci ve tutumlu olursa ancak o zaman evde dirlik düzenlik sağlanır."
+    },
+    {
+        question: "<span>'' Leyleğin ömrü laklakla geçer. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Boş, anlamsız konuşanların durumunu anlatmak için söylenen bir söz.", "İnsanların çoğu amaçsızdır.", "Boş oturmak kişiyi boş bir insan haline getirir.", "Tembel insanlar için kullanılan bir söz."], 
+        correct: "Boş, anlamsız konuşanların durumunu anlatmak için söylenen bir söz."
+    },
+    {
+        question: "<span>'' Doğru söyleyeni dokuz köyden kovarlar. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Yalancı insanlarla dolu bir yerde dürüst insanların yeri yoktur.", "Her zaman doğruları söylemek iyi olmayabilir.", "Dürüst olmak iyidir, fakat her doğruyu her yerde söylememeliyiz.", "Doğru olmakla birlikte başkalarının işine gelmeyen sözleri söyleyenlerin sevilmediğini anlatan bir söz."], 
+        correct: "Doğru olmakla birlikte başkalarının işine gelmeyen sözleri söyleyenlerin sevilmediğini anlatan bir söz."
+    },
+    {
+        question: "<span>'' Dost ağlatır, düşman güldürür. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Dost zannettiğimiz herkes aslında gerçekten dostumuz olmayabilir.", "Dost olan kimsenin söylediği söz, acı da olsa insanın iyiliği içindir.", "Kişi fazla düşman edinmemelidir, bir gün düşmanları ona yardımcı olabilir.", "Dostlarımız bizi gerçekten düşünür, bizden bir şey gizlemezler."], 
+        correct: "Dost olan kimsenin söylediği söz, acı da olsa insanın iyiliği içindir."
+    },
+    {
+        question: "<span>'' Bir koltuğa iki karpuz sığmaz. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["Kişi sevilmediği ortamda bulunmamalıdır.", "Aynı ortamda birbirinden hoşlanmayan iki kişinin bulunması sakıncalıdır.", "Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır.", "Bir yeri kalabalıklaştırmak iyi değildir."], 
+        correct: "Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır."
+    },
+    {
+        question: "<span>'' Terzi kendi söküğünü dikemez. ''</span> <br> <br> Atasözünün anlamı nedir?",
+        options: ["İnsanlar başkalarına yaptıkları hizmetleri kendilerine yapamazlar.", "Yardımsever insanların kendine yararı dokunmaz.", "Beceriksiz insanlar kendi işlerini halledemezler.", "Tembel insanlar kendi işlerini başkalarına yaptırmayı sever."], 
+        correct: "İnsanlar başkalarına yaptıkları hizmetleri kendilerine yapamazlar."
+    },
 ];
 
 let oyunBittiMi = false
