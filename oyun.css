@@ -192,3 +192,16 @@ h3{
   color: white;
   margin-top: 6px;
 }
+.yanlisGosterge{
+  margin-top: -70px;
+}
+#yapamadiginSorularaBak{
+  width: 320px;
+  position: absolute;
+  margin-top: 255px;
+  font-weight: 500;
+  font-size: 25px;
+  -webkit-box-shadow: -2px 24px 73px -12px rgba(0,0,0,0.84);
+  -moz-box-shadow: -2px 24px 73px -12px rgba(0,0,0,0.84);
+  box-shadow: -2px 24px 73px -12px rgba(0,0,0,0.84);
+}

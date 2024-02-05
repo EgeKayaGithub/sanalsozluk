@@ -289,10 +289,14 @@ function checkAnswer(option) {
         progressBar.style.width = '100%';
         progressBar.setAttribute('aria-valuenow', 100);
 
-        document.querySelector(".sorucontainer").innerHTML = `<h3>Yanlış Cevaplar: ${userScore.incorrect} <br> Doğru Cevaplar: ${userScore.correct} <br> Atlanan Sorular: ${questionsSkipped} <br> Zaman Dolan Sorular: ${questionFinishTime} </h3>`;
+        document.querySelector(".sorucontainer").innerHTML = `<h3 class="yanlisGosterge">Yanlış Cevaplar: ${userScore.incorrect} <br> Doğru Cevaplar: ${userScore.correct} <br> Atlanan Sorular: ${questionsSkipped} <br> Zaman Dolan Sorular: ${questionFinishTime} </h3> <br> <button id="yapamadiginSorularaBak" class="bn632-hover bn24" onclick="yapilamayanaGonderme()">Yapamadığın Sorulara Bak</button>`;
         countdownTime =  60;
         oyunBittiMi = true
     }
+}
+
+function yapilamayanaGonderme(){
+    window.location = "yapilamayansorular.html"
 }
 
 // Ekran tıklamalarını kontrol etmek için
