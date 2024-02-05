@@ -1,8 +1,103 @@
 let questions = [
     {
-        question: "<span>'' İvedi ''</span> <br> <br> Kelimesinin anlamı nedir?",
-        options: ["Aynı kuşaktan olan kimse.", "Kuşak", "Üstün nitelikli, değerli olan.", "Doğru, düzgün."], // ! Nesil
-        correct: "Kuşak"
+        question: "<span>''İvedi''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Çabuk", "Aceleci", "Hızlı hareket edemeyen.", "Gereği yokken hızlı hareket etmek."], 
+        correct: "Çabuk"
+    },
+    {
+        question: "<span>''Mahşer midillisi''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Ortalığı karıştıran kimse.", "Yaramaz, hayırsız kimseler için kullanılan bir söz.", "Hareketli, yerinde duramayan.", "Boş işlerle uğraşan kimse."], 
+        correct: "Ortalığı karıştıran kimse."
+    },
+    {
+        question: "<span>''Gaye''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Amaç", "Gerekçe", "Şart", "Zorunluluk"], 
+        correct: "Amaç"
+    },
+    {
+        question: "<span>''Feryat''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Çığlık", "İsyan", "Ortalığın karışması.", "Protesto"], 
+        correct: "Çığlık"
+    },
+    {
+        question: "<span>''Cevahir''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Elmas, yakut vb. Değerli taşlar.", "Mücevher", "Değerli, kıymetli.", "Göz alıcı derecede güzel olan kişiler veya için kullanılan bir söz."], 
+        correct: "Elmas, yakut vb. Değerli taşlar."
+    },
+    {
+        question: "<span>''Mukaddes''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Kutsal", "Dini değeri yüksek.", "Kıymetli", "Önemli"], 
+        correct: "Kutsal"
+    },
+    {
+        question: "<span>''Harp''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Savaş", "Çatışma", "Husumet", "Kavga"], 
+        correct: "Savaş"
+    },
+    {
+        question: "<span>''Nefis''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Öz varlık, kişilik.", "İnsanlık", "Nesil", "Yaşam, hayat."], 
+        correct: "Öz varlık, kişilik."
+    },
+    {
+        question: "<span>''Zoraki''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["İstemeyerek yapılan; gıcırı bükme.", "Sahte", "Yapmacık", "Zorla yapılan iş."], 
+        correct: "İstemeyerek yapılan; gıcırı bükme."
+    },
+    {
+        question: "<span>''Müdafaa''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Savunma", "Mahkeme", "Tebliğ", "Resmi evrak"], 
+        correct: "Savunma"
+    },
+    {
+        question: "<span>''Cürüm''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Suç", "Kabahat", "Yanlışlıkla", "Yalan"], 
+        correct: "Suç"
+    },
+    {
+        question: "<span>''Ukubet''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Ceza", "Esaret", "Ölüm", "Hak"], 
+        correct: "Ceza"
+    },
+    {
+        question: "<span>''Musibet''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Ansızın gelen felaket, sıkıntı veren şey.", "Kötü olay", "Olmaması gereken.", "Zamansız"], 
+        correct: "Ansızın gelen felaket, sıkıntı veren şey."
+    },
+    {
+        question: "<span>''Donkişotluk''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Gereği yokken kahramanlık göstermeye kalkışma durumu.", "Gereksiz hareketler yapmaya çalışmak.", "Aklı yerinde olmayan kimseler için kullanılan bir söz.", "Hayırsız olma durumu."], 
+        correct: "Gereği yokken kahramanlık göstermeye kalkışma durumu."
+    },
+    {
+        question: "<span>''Vizyon sahibi''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Geniş görüşlü, ileri görüşlü, ufku geniş.", "Entelektüel", "Aydın", "Zeki"], 
+        correct: "Geniş görüşlü, ileri görüşlü, ufku geniş."
+    },
+    {
+        question: "<span>''Aş''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Yemek", "Hayat", "Ekmek", "Su"], 
+        correct: "Yemek"
+    },
+    {
+        question: "<span>''Sual''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Soru", "Sorgu", "Yargı", "Cevap"], 
+        correct: "Soru"
+    },
+    {
+        question: "<span>''Nitekim''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Gerçekten, hakikaten.", "Buna rağmen.", "Fakat", "Tahmin edildiği gibi."], 
+        correct: "Gerçekten, hakikaten."
+    },
+    {
+        question: "<span>''Safha''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Evre", "Evrim", "Kötüleşen durum.", "Değişim"], 
+        correct: "Evre"
+    },
+    {
+        question: "<span>''Meşru''</span> <br> <br> Kelimesinin anlamı nedir?",
+        options: ["Yasal", "Uygun", "Elverişli", "Çoğunluğa hitap eden."], 
+        correct: "Yasal"
     }
 ];
 
