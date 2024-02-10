@@ -18,47 +18,50 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="info.css">
+        <link rel="stylesheet" href="info.css">        
         <link rel="stylesheet" href="ortak.css">
         <link rel="stylesheet" href="extra.css">
         <link rel="stylesheet" href="yapilamayansorular.css">
     </head>
-<body>
+    <body>
+        <div class="navbar2">
+            <ul>
+                <button onclick="bilgiBakma()"><li id="bilgiYazi">Bilgi</li></button>
+                <button onclick="showQuestions('sorularabak')"><li id="performansYazi">Oyun Performansına Bak</li></button>
+                <button onclick="cikisYapma()"><li>Menüye Dön</li></button>
+            </ul>
+        </div>
+    
+        <div class="soru-listesi">
 
-    <div class="navbar2">
-        <ul>
-            <button><li>Doğru Sorular</li></button>
-            <button><li>Yanlış Sorular</li></button>
-            <button><li>Atlanan Sorular</li></button>
-            <button><li>Süre Yetmeyen Sorular</li></button>
-        </ul>
-    </div>
-    <div class="soruornegidiv">
-        <div class="soruornegi">
-            <h2>00.Soru</h2>
-            <i class="fa-solid fa-caret-down"></i>
         </div>
-    </div>
-    <div class="soruornegidiv">
-        <div class="soruornegi">
-            <h2>00.Soru</h2>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-    </div>
-    <div class="soruornegidiv">
-        <div class="soruornegi">
-            <h2>00.Soru</h2>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-    </div>
-    <div class="soruornegidiv">
-        <div class="soruornegi">
-            <h2>00.Soru</h2>
-            <i class="fa-solid fa-caret-down"></i>
-        </div>
-    </div>
 
 
-    <script src="kelimesorular.js"></script>
-</body>
+        <div class="info">
+            <div class="icerik1">
+            <h1>Soru Renkleri</h1>
+            <div class="renkler">
+                <div class="renk"><div class="renkyesil"></div> 
+                <h3>Doğru Soru</h3>
+            </div>
+
+                <div class="renk">
+                    <div class="renkkirmizi"></div> 
+                    <h3>Yanlış Soru</h3>
+                </div>
+
+                <div class="renk">
+                    <div class="renksari"></div> 
+                    <h3>Atlanan Soru</h3>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+
+    
+        <script src="kelimesorular.js"></script>
+        <script src="yapilamayansorular.js"></script>
+    </body>
+    </html>
 </html>

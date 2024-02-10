@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans&display=swap');
+@import url('https://fonts.cdnfonts.com/css/super-salad');
+
+.baslik{
+    font-size: 60px;
+    color: white;
+    font-family: 'Super Salad', sans-serif;                                            
+    letter-spacing: 4px;
+    text-shadow: 6px 6px 7px rgba(0,0,0,0.6);
+}
+h1{
+    color: white;
+    font-family: 'Albert Sans', sans-serif;
+    font-weight: bold;
+}
+
+p{
+    font-size: 35px;
+    color: white;
+    font-family: 'Albert Sans', sans-serif;
+    margin-top: 15px;
+}
+.icerik3 p a,
+.icerik2 p a,
+.icerik p a{
+    text-decoration: none;
+    color: white;
+    border-bottom: 4px solid white;
+}
+.icerik3 p a:hover,
+.icerik2 p a:hover,
+.icerik p a:hover{
+    text-decoration: none;
+    transition: 0.2s;
+    color: rgb(38, 121, 231);
+    border-bottom: 4px solid rgb(38, 121, 231);;
+}
+.icerik{
+    height: 365px;
+    padding-top: 25px;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#211c7a",GradientType=1);
+}
+.icerik2{
+    height: 560px;
+    padding-top: 25px;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#211c7a",GradientType=1);
+}
+.icerik3{
+    height: 600px;
+    padding-top: 25px;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,10,14,1) 15%, rgba(121,9,9,1) 85%, rgba(33,28,122,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#211c7a",GradientType=1);  
+}
+.buton{
+    margin-left: -100PX;
+    position: absolute;
+}

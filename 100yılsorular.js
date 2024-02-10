@@ -132,8 +132,11 @@ let currentQuestionIndex = 0;
 let userScore = { correct: 0, incorrect: 0 };
 let questionFinishTime = 0;
 let countdownTime = 60;
-debugger;
-// Zamanlayıcıyı güncelleyen fonksiyodn
+let atlananSorular = []
+let yanlisSorular = []
+let dogruSorular = []
+let sureAsimiSorular = []
+
 function updateCountdown() {
     const countdownElement = document.getElementById('sure');
 
@@ -159,9 +162,7 @@ function startCountdown() {
 function stopCountdown() {
     clearInterval(countdownInterval);
 }
-// Zamanlayıcı her saniye güncellensin
 
-// Zaman dolduğunda çalışacak fonksiyon
 function timeIsUp() {
     stopCountdown();
     questionsSkipped -= 1
@@ -184,13 +185,12 @@ function shuffleOptions(options) {
 
 function askQuestion() {
     if (currentQuestionIndex >= questions.length) {
-        // Oyun bitti, sonucu göster
         showResult();
         return;
     }
 
     const question = questions[currentQuestionIndex];
-    shuffleOptions(question.options); // Shuffle the options
+    shuffleOptions(question.options);
 
     document.querySelector(".soru").innerHTML = question.question;
 
@@ -199,7 +199,7 @@ function askQuestion() {
         optionElement.innerHTML = question.options[i];
         optionElement.classList.remove("correct", "incorrect");
     }
-    countdownTime = 60; // İsterseniz soru başına farklı süreler ayarlayabilirsiniz
+    countdownTime = 60;
     updateCountdown();
     startCountdown();
 }
@@ -220,12 +220,13 @@ function checkAnswer(option) {
     const question = questions[currentQuestionIndex];
 
     if (option.innerHTML === question.correct) {
+        dogruSorular.push(question.question)
+        localStorage.setItem('dogruSorularLocal', dogruSorular);
+        dogrusorularcikti = localStorage.getItem('dogruSorularLocal')
         option.classList.add("correct");
         userScore.correct++;
-        earnCoins(25); // Örneğin, her doğru cevapta 10 coin kazanılacak.
-        // Diğer kodlar...
+        earnCoins(25);
 
-        // Doğru şıkkı içeren elementin yanındaki diğer şıkları devre dışı bırak
         const allOptions = document.querySelectorAll(".secenekler");
         allOptions.forEach((opt) => {
             if (opt !== option) {
@@ -235,11 +236,14 @@ function checkAnswer(option) {
     } else {
         option.classList.add("incorrect");
         userScore.incorrect++;
+        yanlisSorular.push(question.question)
+        localStorage.setItem('yanlisSorularLocal', yanlisSorular);
+        yanlissorularcikti = localStorage.getItem('yanlisSorularLocal')
         if (coinCount >=25){
             earnCoins(-25)
         }
-        
-
+      
+        let soru23 = question.question
         for (let i = 0; i < question.options.length; i++) {
             if (question.options[i] === question.correct) {
                 document.querySelectorAll(".secenekler")[i].classList.add("correct");
@@ -257,7 +261,7 @@ function checkAnswer(option) {
         setTimeout(() => {
             answerSelected = false;
 
-            // Zamanlayıcı süresi boyunca diğer şıkları devre dışı bırak
+
             const allOptions = document.querySelectorAll(".secenekler");
             allOptions.forEach((opt) => {
                 opt.classList.remove("disabled");
@@ -288,7 +292,7 @@ function yapilamayanaGonderme(){
     window.location = "yapilamayansorular.html"
 }
 
-// Ekran tıklamalarını kontrol etmek için
+
 document.body.addEventListener('click', (event) => {
     if (event.target.classList.contains('secenekler') && !event.target.classList.contains('disabled')) {
         event.preventDefault();
@@ -303,7 +307,7 @@ askQuestion();
 
 document.getElementById('soruyuAtlaBtn').addEventListener('click', () => skipQuestion());
 
-let questionsSkipped = 0; // Yeni değişken
+let questionsSkipped = 0;
 
 function skipQuestion() {
     if (coinCount >=25){
@@ -312,14 +316,12 @@ function skipQuestion() {
     if (!answerSelected) {
         const question = questions[currentQuestionIndex];
 
-        // Doğru şıkkı bul
         const correctOptionIndex = question.options.findIndex(opt => opt === question.correct);
 
-        // Yeşil olarak işaretle
+
         const correctOption = document.querySelectorAll(".secenekler")[correctOptionIndex];
         correctOption.classList.add("correct");
 
-        // Diğer seçenekleri devre dışı bırak
         const allOptions = document.querySelectorAll(".secenekler");
         allOptions.forEach(opt => {
             if (opt !== correctOption) {
@@ -327,37 +329,37 @@ function skipQuestion() {
             }
         });
 
-        // "Soruyu Atla" butonunu devre dışı bırak
+
         const skipButton = document.getElementById('soruyuAtlaBtn');
         skipButton.disabled = true;
+        userScore.incorrect++;
+        atlananSorular.push(question.question)
+        localStorage.setItem('atlananSorularLocal', atlananSorular);
+        atlanansorularcikti = localStorage.getItem('atlananSorularLocal')
 
-        // Soruyu atladığımızı kaydet
         questionsSkipped++;
 
         setTimeout(() => {
-            // Bekleme süresi sona erdikten sonra diğer işlemleri gerçekleştir
+
             currentQuestionIndex++;
             askQuestion();
             answerSelected = false;
 
-            // Progress bar'ı güncelle
             updateProgressBar();
 
-            // Yeşil işaret, devre dışı bırakılan seçenekleri ve butonu temizle
             correctOption.classList.remove("correct");
             allOptions.forEach(opt => opt.classList.remove("disabled"));
             skipButton.disabled = false;
 
-            // Oyun bittiğinde sonucu göster
+
             if (currentQuestionIndex === questions.length) {
                 showResult();
             }
-        }, 3000); // 3 saniye beklet
+        }, 3000);
     }
 }
 function showResult() {
-    // Display the final result, you can customize this part based on your requirements
-    document.querySelector(".sorucontainer").innerHTML = `<h3>Yanlış Cevaplar: ${userScore.incorrect} <br> Doğru Cevaplar: ${userScore.correct} <br> Atlanan Sorular: ${questionsSkipped} <br> Zaman Dolan Sorular: ${questionFinishTime} </h3>`;
+    document.querySelector(".sorucontainer").innerHTML = `<h3 class="yanlisGosterge">Yanlış Cevaplar: ${userScore.incorrect} <br> Doğru Cevaplar: ${userScore.correct} <br> Atlanan Sorular: ${questionsSkipped} <br> Zaman Dolan Sorular: ${questionFinishTime} </h3> <br> <button id="yapamadiginSorularaBak" class="bn632-hover bn24" onclick="yapilamayanaGonderme()">Yapamadığın Sorulara Bak</button>`;
 
 }
 function updateProgressBar() {
@@ -370,20 +372,20 @@ function updateProgressBar() {
 
 function toggleSound() {
     var audioElement = document.getElementById('arkaFonMuzik');
-    
+  
     if (audioElement.paused) {
         audioElement.play();
     } else {
         audioElement.pause();
     }
-    const soundButton = document.querySelector(".sesacmakapama"); // Ses açma kapama butonunu seç
-    
+    const soundButton = document.querySelector(".sesacmakapama");
+  
     if (soundButton.classList.contains("sesacik")) {
-            // Eğer ses açıksa, ses kapalı ikonunu göster
+
         soundButton.innerHTML = '<i class="fa-solid fa-volume-off"></i>';
         soundButton.classList.remove("sesacik");
     } else {
-            // Eğer ses kapalıysa, ses açık ikonunu göster
+
         soundButton.innerHTML = '<i class="fa-solid fa-volume-high"></i>';
         soundButton.classList.add("sesacik");
     }
@@ -391,7 +393,7 @@ function toggleSound() {
 
 function cikisYapma(){
 
-    if (oyunBittiMi == false){    
+    if (oyunBittiMi == false){ 
         cikisonay = confirm("Çıkış yapılacak ve veri kaybolacak emin misiniz?")
         if (cikisonay == true){
             window.location = "games.html"
@@ -401,3 +403,7 @@ function cikisYapma(){
         window.location = "games.html"
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    showQuestions('correct'); // Varsayılan olarak doğru soruları göster
+});

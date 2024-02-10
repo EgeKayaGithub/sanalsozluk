@@ -106,7 +106,10 @@ let currentQuestionIndex = 0;
 let userScore = { correct: 0, incorrect: 0 };
 let questionFinishTime = 0;
 let countdownTime = 60;
-debugger;
+let atlananSorular = []
+let yanlisSorular = []
+let dogruSorular = []
+let sureAsimiSorular = []
 
 function updateCountdown() {
     const countdownElement = document.getElementById('sure');
@@ -161,7 +164,7 @@ function askQuestion() {
     }
 
     const question = questions[currentQuestionIndex];
-    shuffleOptions(question.options); 
+    shuffleOptions(question.options);
 
     document.querySelector(".soru").innerHTML = question.question;
 
@@ -170,7 +173,7 @@ function askQuestion() {
         optionElement.innerHTML = question.options[i];
         optionElement.classList.remove("correct", "incorrect");
     }
-    countdownTime = 60; 
+    countdownTime = 60;
     updateCountdown();
     startCountdown();
 }
@@ -191,9 +194,12 @@ function checkAnswer(option) {
     const question = questions[currentQuestionIndex];
 
     if (option.innerHTML === question.correct) {
+        dogruSorular.push(question.question)
+        localStorage.setItem('dogruSorularLocal', dogruSorular);
+        dogrusorularcikti = localStorage.getItem('dogruSorularLocal')
         option.classList.add("correct");
         userScore.correct++;
-        earnCoins(25); 
+        earnCoins(25);
 
         const allOptions = document.querySelectorAll(".secenekler");
         allOptions.forEach((opt) => {
@@ -204,11 +210,14 @@ function checkAnswer(option) {
     } else {
         option.classList.add("incorrect");
         userScore.incorrect++;
+        yanlisSorular.push(question.question)
+        localStorage.setItem('yanlisSorularLocal', yanlisSorular);
+        yanlissorularcikti = localStorage.getItem('yanlisSorularLocal')
         if (coinCount >=25){
             earnCoins(-25)
         }
-        
-
+      
+        let soru23 = question.question
         for (let i = 0; i < question.options.length; i++) {
             if (question.options[i] === question.correct) {
                 document.querySelectorAll(".secenekler")[i].classList.add("correct");
@@ -297,7 +306,10 @@ function skipQuestion() {
 
         const skipButton = document.getElementById('soruyuAtlaBtn');
         skipButton.disabled = true;
-
+        userScore.incorrect++;
+        atlananSorular.push(question.question)
+        localStorage.setItem('atlananSorularLocal', atlananSorular);
+        atlanansorularcikti = localStorage.getItem('atlananSorularLocal')
 
         questionsSkipped++;
 
@@ -317,11 +329,11 @@ function skipQuestion() {
             if (currentQuestionIndex === questions.length) {
                 showResult();
             }
-        }, 3000); 
+        }, 3000);
     }
 }
 function showResult() {
-    document.querySelector(".sorucontainer").innerHTML = `<h3>Yanlış Cevaplar: ${userScore.incorrect} <br> Doğru Cevaplar: ${userScore.correct} <br> Atlanan Sorular: ${questionsSkipped} <br> Zaman Dolan Sorular: ${questionFinishTime} </h3>`;
+    document.querySelector(".sorucontainer").innerHTML = `<h3 class="yanlisGosterge">Yanlış Cevaplar: ${userScore.incorrect} <br> Doğru Cevaplar: ${userScore.correct} <br> Atlanan Sorular: ${questionsSkipped} <br> Zaman Dolan Sorular: ${questionFinishTime} </h3> <br> <button id="yapamadiginSorularaBak" class="bn632-hover bn24" onclick="yapilamayanaGonderme()">Yapamadığın Sorulara Bak</button>`;
 
 }
 function updateProgressBar() {
@@ -334,14 +346,14 @@ function updateProgressBar() {
 
 function toggleSound() {
     var audioElement = document.getElementById('arkaFonMuzik');
-    
+  
     if (audioElement.paused) {
         audioElement.play();
     } else {
         audioElement.pause();
     }
-    const soundButton = document.querySelector(".sesacmakapama"); 
-    
+    const soundButton = document.querySelector(".sesacmakapama");
+  
     if (soundButton.classList.contains("sesacik")) {
 
         soundButton.innerHTML = '<i class="fa-solid fa-volume-off"></i>';
@@ -355,7 +367,7 @@ function toggleSound() {
 
 function cikisYapma(){
 
-    if (oyunBittiMi == false){    
+    if (oyunBittiMi == false){ 
         cikisonay = confirm("Çıkış yapılacak ve veri kaybolacak emin misiniz?")
         if (cikisonay == true){
             window.location = "games.html"
@@ -365,3 +377,8 @@ function cikisYapma(){
         window.location = "games.html"
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    showQuestions('correct'); // Varsayılan olarak doğru soruları göster
+});
+
