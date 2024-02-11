@@ -11,7 +11,7 @@
     justify-content: center;
     font-family: 'SF Pro Display', sans-serif;    
     padding-top: 25px;    
-    border-bottom: 2px solid gray;                               
+    border-bottom: 1px solid rgb(90, 89, 89);                               
 }
 .navbar2 ul li{
     display: inline;
@@ -94,7 +94,6 @@ p{
     border-radius: 40px;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
 }
 
 .secenekler2{

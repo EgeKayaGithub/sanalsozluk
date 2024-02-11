@@ -44,12 +44,13 @@ function showQuestions(type) {
 
             soruOrnegi.innerHTML = `
                 <h2 class="h2">${i + 1}. Soru</h2>
-                <p>${soru.question}</p>
-                <div class="seceneklercontainer">
-                    <div class="secenekcontainer1">${shuffledOptions.slice(0, 2).map((option, index) => `<button class="secenekler2 ${soru.correct === option ? 'correct' : (soru.selectedAnswer === option && !soru.correct ? 'correct' : '')}" onclick="return false;">${option}</button>`).join('')}</div>
-                    <div class="secenekcontainer2">${shuffledOptions.slice(2).map((option, index) => `<button class="secenekler2 ${soru.correct === option ? 'correct' : (soru.selectedAnswer === option && !soru.correct ? 'correct' : '')}" onclick="return false;">${option}</button>`).join('')}</div>
+                <p class="animate__animated animate__animated animate__zoomIn">${soru.question}</p>
+                <div class="seceneklercontainer ">
+                    <div class="secenekcontainer1">${shuffledOptions.slice(0, 2).map((option, index) => `<button class="secenekler2 animate__animated animate__flipInX ${soru.correct === option ? 'correct' : (soru.selectedAnswer === option && !soru.correct ? 'correct' : '')}" onclick="return false;">${option}</button>`).join('')}</div>
+                    <div class="secenekcontainer2">${shuffledOptions.slice(2).map((option, index) => `<button class="secenekler2 animate__animated animate__flipInX ${soru.correct === option ? 'correct' : (soru.selectedAnswer === option && !soru.correct ? 'correct' : '')}" onclick="return false;">${option}</button>`).join('')}</div>
                 </div>
             `;
+            
 
             soruListesiDiv.appendChild(soruOrnegiDiv);
             soruOrnegiDiv.appendChild(soruOrnegi);
@@ -64,3 +65,4 @@ function bilgiBakma(){
     bilgiYazi.style.color = "rgb(40, 233, 6)"
     performansYazi.style.color = "#FFFFFF"
 }
+
