@@ -90,3 +90,24 @@ a:hover{
     text-decoration: none;
     color: white;
 }
+
+.gdpGirisButon{
+    border: none;
+    width: 15px;
+    height: 15px;
+    background-color: rgb(38, 37, 44);
+    cursor: wait;
+    margin-top: -10px;
+}
+.gdpGirisInput{
+    width: 100px;
+    height: 30px;
+    margin-top: -15px;
+    position: absolute;
+    display: none;
+    border-radius: 10px;
+    border: none;
+    background-color: #191919;
+    color: black;
+    text-align: center;
+}

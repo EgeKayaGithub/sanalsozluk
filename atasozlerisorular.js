@@ -257,7 +257,7 @@ function checkAnswer(option) {
 }
 
 function yapilamayanaGonderme(){
-    window.location = "yapilamayansorular.html"
+    window.location = "yapilamayansorularata.html"
 }
 
 

@@ -289,7 +289,7 @@ function checkAnswer(option) {
 }
 
 function yapilamayanaGonderme(){
-    window.location = "yapilamayansorular.html"
+    window.location = "yapilamayansorular100.html"
 }
 
 
