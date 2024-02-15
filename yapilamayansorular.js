@@ -2,9 +2,11 @@ const soruListesiDiv = document.querySelector(".soru-listesi");
 const infoDiv = document.querySelector(".info");
 const bilgiYazi = document.getElementById("bilgiYazi")
 const performansYazi = document.getElementById("performansYazi")
+const gizemlikutupng = document.getElementById("gizemlikutupngid")
+const toplampuanh2 = document.getElementById("toplampuanh2")
 bilgiYazi.style.color = "rgb(40, 233, 6)"
 function showQuestions(type) {
-
+    let puantoplam = 0;
     let dogrusorularcikti2 = localStorage.getItem('dogruSorularLocal')
     let yanlissorularcikti2 = localStorage.getItem('yanlisSorularLocal')
     let atlanansorularcikti2 = localStorage.getItem('atlananSorularLocal')
@@ -34,12 +36,19 @@ function showQuestions(type) {
             soruOrnegi.classList.add("soruornegi");
             if(dogrusorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("correct")
+                puantoplam += 1000
             }
             if(yanlissorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("incorrect")
+                if (puantoplam => 10){
+                    puantoplam -=10
+                }
             }
             if(atlanansorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("skipped")
+                if (puantoplam => 5){
+                    puantoplam -=5
+                }
             }
 
             soruOrnegi.innerHTML = `
@@ -51,12 +60,12 @@ function showQuestions(type) {
                 </div>
             `;
             
-
             soruListesiDiv.appendChild(soruOrnegiDiv);
             soruOrnegiDiv.appendChild(soruOrnegi);
         }
         
     }
+    return puantoplam;
 }
 
 function bilgiBakma(){
@@ -64,5 +73,14 @@ function bilgiBakma(){
     infoDiv.style.display = "flex";
     bilgiYazi.style.color = "rgb(40, 233, 6)"
     performansYazi.style.color = "#FFFFFF"
+}
+
+let toplampuan = showQuestions('sorularabak')
+
+console.log(toplampuan)
+
+function puanBakma(){
+    gizemlikutupng.classList.add("animate__animated","animate__fadeOutDown")
+    toplampuanh2.innerText = `Puanınız: ${toplampuan}`
 }
 

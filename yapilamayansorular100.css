@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: none;
+    background-color: #000;
+}
 .navbar2{
     width: 100%;
     height: 85px;
@@ -200,6 +204,7 @@ h1{
     font-family: 'FX Logo', sans-serif;
     color: greenyellow;
     letter-spacing: 5px;
+    position: absolute;
 }
 
 .soru-listesi-on{
@@ -208,4 +213,60 @@ h1{
 .renk{
     display: flex;
     margin-top: 20px;
+}
+
+.icerik2{
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    margin-top: 280px;
+    background-color: black;
+    position: absolute;
+    height: 430px;
+    width: 100%;
+    color: white;
+}
+
+.icerik3{
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    margin-top: 600px;
+    background-color: black;
+    position: absolute;
+    height: 430px;
+    width: 100%;
+    color: white;
+}
+
+.icerik3h2{
+    color: white;
+}
+
+.puanGorButon{
+    display: block;
+    height: 50px;
+    border-radius: 15px;
+    background-color: red;
+    color: white;
+    font-size: 25px;
+    width: 400px;
+    position: absolute;
+    margin-top: 100px;
+    border: none;
+}
+
+
+.gizemliKutuImg{
+    width: 170px;
+    height: 170px;
+    margin-top: 200px;
+    border: none;
+    position: absolute;
+    
+}
+
+#toplampuanh2{
+    position: absolute;
+    margin-top: 250px;
 }

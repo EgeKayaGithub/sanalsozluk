@@ -17,8 +17,7 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="info.css">        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>     
         <link rel="stylesheet" href="ortak.css">
         <link rel="stylesheet" href="extra.css">
         <link rel="stylesheet" href="yapilamayansorular100.css">
@@ -40,10 +39,10 @@
         <div class="info">
             <div class="icerik1">
             <h1>Soru Renkleri</h1>
-            <div class="renkler">
+                <div class="renkler">
                 <div class="renk"><div class="renkyesil"></div> 
-                <h3>Doğru Soru</h3>
-            </div>
+                    <h3>Doğru Soru</h3>
+                </div>
 
                 <div class="renk">
                     <div class="renkkirmizi"></div> 
@@ -54,9 +53,32 @@
                     <div class="renksari"></div> 
                     <h3>Atlanan Soru</h3>
                 </div>
-                
+                </div>
             </div>
-        </div>
+            <div class="icerik2">
+                <h1>PUANLARI NASIL HESAPLIYORUZ?</h1>
+                <div class="renkler">
+                    <div class="renk"><div class="renkyesil"></div> 
+                        <h3>Doğru Soru = 10 Puan</h3>
+                    </div>
+    
+                    <div class="renk">
+                        <div class="renkkirmizi"></div> 
+                        <h3>Yanlış Soru = -10 Puan</h3>
+                    </div>
+    
+                    <div class="renk">
+                        <div class="renksari"></div> 
+                        <h3>Atlanan Soru = -5 Puan</h3>
+                    </div>
+                    </div>
+            </div>
+            <div class="icerik3">
+                <h1>TOPLAM PUANINIZ</h1>
+                <button onclick="puanBakma()" class="puanGorButon">Puanı Gör</button>
+                <h2 id="toplampuanh2">0</h2>
+                <img src="gizemlikutu.png" alt="" id="gizemlikutupngid" class="gizemliKutuImg">
+            </div>
         </div>
 
     

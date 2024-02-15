@@ -11,7 +11,7 @@ let questions = [
     },
     {
         question: "<span>'' İki cambaz bir ipte oynamaz. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır.", "Bir yerde birbirini sevmeyen iki kişi olması uygun değildir.", "İnsan ait olmadığı yerlerde bulunmamalıdır  ", "Kurnazlıkta eşit olan iki kimse birbirlerini aldatamaz "], 
+        options: ["Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır.", "Bir yerde birbirini sevmeyen iki kişi olması uygun değildir.", "İnsan ait olmadığı yerlerde bulunmamalıdır  ", "Kurnazlıkta eşit olan iki kimse birbirlerini aldatamaz."], 
         correct: "Kurnazlıkta eşit olan iki kimse birbirlerini aldatamaz."
     },
     {
