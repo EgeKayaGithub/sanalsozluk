@@ -6,7 +6,7 @@ let questions = [
     },
     {
         question: "<span>'' Ava giden avlanır . ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Bir işe girişen,o işin güçlüklerini veya masraflarını göze almalıdır.", "Her yapılan işin sorumlulukları vardır.", "Çıkarını başkalarına zarar vermekte arayan kimse, o zarara kendisi uğrar.", "insan sevdiği kimse veya sevdiği iş yüzünden gelecek sıkıntılara katlanır."], 
+        options: ["Bir işe girişen, o işin güçlüklerini veya masraflarını göze almalıdır.", "Her yapılan işin sorumlulukları vardır.", "Çıkarını başkalarına zarar vermekte arayan kimse, o zarara kendisi uğrar.", "İnsan sevdiği kimse veya sevdiği iş yüzünden gelecek sıkıntılara katlanır."], 
         correct: "Çıkarını başkalarına zarar vermekte arayan kimse, o zarara kendisi uğrar."
     },
     {
@@ -31,8 +31,8 @@ let questions = [
     },
     {
         question: "<span>'' İğneyi kendine, çuvaldızı başkasına batır. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Kişi kendini diğer insanlardan üstün tutar. ", "Fazla düşünceli olmak kişiye zarar verir.", "Başkasına zarar verebilecek davranışlar yapılmamalıdır.", "Başkasına zararı dokunacak bir davranışı yapmadan önce iyi düşün, kendi kendini eleştir."], 
-        correct: "Başkasına zararı dokunacak bir davranışı yapmadan önce iyi düşün, kendi kendini eleştir."
+        options: ["Kişi kendini diğer insanlardan üstün tutar. ", "Fazla düşünceli olmak kişiye zarar verir.", "Başkasına zarar verebilecek davranışlar yapılmamalıdır.", "Başkasına zararı olacak davranış yapılmadan önce düşünülmelidir."], 
+        correct: "Başkasına zararı olacak davranış yapılmadan önce düşünülmelidir."
     },
     {
         question: "<span>'' Tavşan dağa küsmüş de dağın haberi olmamış. ''</span> <br> <br> Atasözünün anlamı nedir?",
@@ -55,19 +55,14 @@ let questions = [
         correct: "Bir kişi amaç edindiği işte kazaya uğrar."
     },
     {
-        question: "<span>'' Minareyi çalan kılıfını hazırlar. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Kişi riskli bir işe kalkışmadan tedbirleri alır.", "Kolay kolay gizlenemeyecek bir kötülüğü yapan sorumluluktan kurtulma yollarını önceden düşünür.", "Kişi yapmaması gereken bir eylemde bulununca kaçmak için yer arar.", "yapılmaması gereken şey kolay gizlenemeyecek olduğunda kişinin bu durumdan kaçması zor olacaktır."], 
-        correct: "Kişi yapmaması gereken bir eylemde bulununca kaçmak için yer arar."
-    },
-    {
         question: "<span>'' El elin eşeğini türkü çağırarak arar. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["İnsanın kendi sıkıntı ve sorunlarına başkaları gereken önemi vermez, gerektiği kadar ilgilenmez.", "Seçenek 2", "Seçenek 3", "Seçenek 4"], 
-        correct: "İnsanın kendi sıkıntı ve sorunlarına başkaları gereken önemi vermez, gerektiği kadar ilgilenmez."
+        options: ["İnsan başkalarının sorunlarını önemsemeyerek çözüm arar.", "Kimse kimsenin umurunda değildir.", "İnsanlar bencildir, yalnızca kendilerini düşünürler.", "Bencillik kişiyi kötü etkiler."], 
+        correct: "İnsan başkalarının sorunlarını önemsemeyerek çözüm arar."
     },
     {
         question: "<span>'' Yuvayı yapan dişi kuştur. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Güçlü olan kişi aynı zamanda ortamı idare eden kişidir.", "Bir ortamın lideri mutlaka en kuvvetli olandır.", "Evin kadını anlayışlı, idareci ve tutumlu olursa ancak o zaman evde dirlik düzenlik sağlanır.", "Dişiler ev halkını idare edenlerdir."], 
-        correct: "Evin kadını anlayışlı, idareci ve tutumlu olursa ancak o zaman evde dirlik düzenlik sağlanır."
+        options: ["Güçlü olan kişi aynı zamanda ortamı idare eden kişidir.", "Bir ortamın lideri mutlaka en kuvvetli olandır.", "Evin kadını idareli olduğunda evin düzeni sağlanır.", "Dişiler ev halkını idare edenlerdir."], 
+        correct: "Evin kadını idareli olduğunda evin düzeni sağlanır."
     },
     {
         question: "<span>'' Leyleğin ömrü laklakla geçer. ''</span> <br> <br> Atasözünün anlamı nedir?",
@@ -76,8 +71,8 @@ let questions = [
     },
     {
         question: "<span>'' Doğru söyleyeni dokuz köyden kovarlar. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Yalancı insanlarla dolu bir yerde dürüst insanların yeri yoktur.", "Her zaman doğruları söylemek iyi olmayabilir.", "Dürüst olmak iyidir, fakat her doğruyu her yerde söylememeliyiz.", "Doğru olmakla birlikte başkalarının işine gelmeyen sözleri söyleyenlerin sevilmediğini anlatan bir söz."], 
-        correct: "Doğru olmakla birlikte başkalarının işine gelmeyen sözleri söyleyenlerin sevilmediğini anlatan bir söz."
+        options: ["Yalancı insanlarla dolu bir yerde dürüst insanların yeri yoktur.", "Her zaman doğruları söylemek iyi olmayabilir.", "Dürüst olmak iyidir, fakat her doğruyu her yerde söylememeliyiz.", "Doğruları söyleyen kişinin bazı kişilerle arası kötü olabilir."], 
+        correct: "Doğruları söyleyen kişinin bazı kişilerle arası kötü olabilir."
     },
     {
         question: "<span>'' Dost ağlatır, düşman güldürür. ''</span> <br> <br> Atasözünün anlamı nedir?",
@@ -86,7 +81,7 @@ let questions = [
     },
     {
         question: "<span>'' Bir koltuğa iki karpuz sığmaz. ''</span> <br> <br> Atasözünün anlamı nedir?",
-        options: ["Kişi sevilmediği ortamda bulunmamalıdır.", "Aynı ortamda birbirinden hoşlanmayan iki kişinin bulunması sakıncalıdır.", "Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır.", "Bir yeri kalabalıklaştırmak iyi değildir."], 
+        options: ["Kişi sevilmediği ortamda bulunmamalıdır.", "Aynı yer de iki küsün bulunması tehlikelidir.", "Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır.", "Bir yeri kalabalıklaştırmak iyi değildir."], 
         correct: "Aynı zamanda birden çok işle ilgilenmek başarı için sakıncalıdır."
     },
     {
