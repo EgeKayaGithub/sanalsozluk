@@ -36,7 +36,7 @@ function showQuestions(type) {
             soruOrnegi.classList.add("soruornegi");
             if(dogrusorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("correct")
-                puantoplam += 1000
+                puantoplam += 10
             }
             if(yanlissorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("incorrect")
