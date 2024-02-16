@@ -21,6 +21,12 @@
     <link rel="stylesheet" href="ortak.css">
     <link rel="stylesheet" href="oyun.css">
     <link rel="stylesheet" href="extra.css">
+    
+    <script>
+        localStorage.setItem("yanlisSorularLocal"," ")
+        localStorage.setItem("dogruSorularLocal"," ")
+        localStorage.setItem("atlananSorularLocal"," ")
+    </script>
 </head>
 <body> 
 <audio src="arkafonmuzik.MP3" id="arkaFonMuzik"></audio>
@@ -33,7 +39,6 @@
 
 <div class="sorucontainer animate__animated animate__fadeInDownBig">
   <h2 class="soru">Soru Gelecek Alan</h2>
-
 </div>
 
 
@@ -59,7 +64,7 @@
     <a href="#" onclick="cikisYapma()" class="animate__animated animate__fadeInBottomRight"><button class="cikisbuton" title="Çıkış Yap">Çıkış Yap</button></a>
   </div>
 
-</div>z
+</div>
 <script src="coin.js"></script>
 <script src="atasozlerisorular.js"></script>
 </body>

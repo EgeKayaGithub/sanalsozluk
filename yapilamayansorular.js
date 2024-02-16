@@ -40,13 +40,13 @@ function showQuestions(type) {
             }
             if(yanlissorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("incorrect")
-                if (puantoplam => 10){
+                if (puantoplam >= 10){
                     puantoplam -=10
                 }
             }
             if(atlanansorularcikti2.includes(soru.question)){
                 soruOrnegi.classList.add("skipped")
-                if (puantoplam => 5){
+                if (puantoplam >= 5){
                     puantoplam -=5
                 }
             }

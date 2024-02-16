@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pixelate');
 *{
     margin: 0;
     padding: 0;
@@ -266,5 +267,15 @@ h1{
 
 #toplampuanh2{
     position: absolute;
-    margin-top: 250px;
+    margin-top: 210px;
+    font-size: 65px;
+    font-family: 'SF Pixelate', sans-serif;
+    text-shadow:
+      0 0 19px #fff,
+      0 0 30px rgb(14, 207, 78),
+      0 0 40px  rgb(14, 207, 78),
+      0 0 60px  rgb(14, 207, 78),
+      0 0 90px  rgb(14, 207, 78),
+      0 0 120px  rgb(14, 207, 78);
 }
+

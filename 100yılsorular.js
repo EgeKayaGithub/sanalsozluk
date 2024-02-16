@@ -332,7 +332,6 @@ function skipQuestion() {
 
         const skipButton = document.getElementById('soruyuAtlaBtn');
         skipButton.disabled = true;
-        userScore.incorrect++;
         atlananSorular.push(question.question)
         localStorage.setItem('atlananSorularLocal', atlananSorular);
         atlanansorularcikti = localStorage.getItem('atlananSorularLocal')
@@ -407,3 +406,5 @@ function cikisYapma(){
 document.addEventListener("DOMContentLoaded", function () {
     showQuestions('correct'); // Varsayılan olarak doğru soruları göster
 });
+
+
