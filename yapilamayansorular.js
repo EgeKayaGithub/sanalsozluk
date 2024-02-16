@@ -78,9 +78,31 @@ function bilgiBakma(){
 let toplampuan = showQuestions('sorularabak')
 
 console.log(toplampuan)
-
+    let sayac = 0;
 function puanBakma(){
-    gizemlikutupng.classList.add("animate__animated","animate__fadeOutDown")
-    toplampuanh2.innerText = `Puanınız: ${toplampuan}`
+    sayac += 1;
+    console.log(sayac)
+    for (let i = 1; i<5; i++){
+        if (sayac == i) {
+            gizemlikutupng.src = `gizemlikutu${i}.png`;
+            gizemlikutupng.classList.add("animate__animated", "animate__headShake");
+            gizemlikutupng.addEventListener("animationend", function() {
+                setTimeout(function() {
+                    gizemlikutupng.classList.remove("animate__headShake");
+                }, 1); 
+            });
+        }
+    }
+    if (sayac == 5) {
+        // Belirli bir süre sonra sınıfı ekleyip ardından elementi kaldır
+        setTimeout(function() {
+            gizemlikutupng.classList.remove("animate__headShake")
+            gizemlikutupng.classList.add("animate__bounceOutDown");
+        }, 1); 
+        setTimeout(function() {
+            gizemlikutupng.remove();
+        }, 2000); 
+    }
+    toplampuanh2.innerText = ` ${toplampuan}`
 }
 

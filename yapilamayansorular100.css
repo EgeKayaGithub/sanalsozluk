@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pixelate');
 *{
     margin: 0;
     padding: 0;
@@ -258,8 +259,8 @@ h1{
 
 
 .gizemliKutuImg{
-    width: 170px;
-    height: 170px;
+    width: 180px;
+    height: 180px;
     margin-top: 200px;
     border: none;
     position: absolute;
@@ -269,4 +270,7 @@ h1{
 #toplampuanh2{
     position: absolute;
     margin-top: 250px;
+    font-size: 70px;
+    font-family: 'SF Pixelate', sans-serif;
 }
+
