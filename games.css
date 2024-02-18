@@ -128,6 +128,9 @@ a:hover{
     .oyunframe h2{
         font-size: 48px;
     }
+    .basyazi{
+        font-size: 45px;
+    }
 }
 @media screen and (max-width:495px) {
     .oyunframeozel h2{
@@ -136,7 +139,9 @@ a:hover{
     .oyunframe h2{
         font-size: 43px;
     }
-    
+    .basyazi{
+        font-size: 41px;
+    }
 }
 @media screen and (max-width:400px) {
     .oyunframeozel h2{
@@ -144,6 +149,9 @@ a:hover{
     }
     .oyunframe h2{
         font-size: 39px;
+    }
+    .basyazi{
+        font-size: 34px;
     }
     
 }
@@ -154,23 +162,34 @@ a:hover{
     .oyunframe h2{
         font-size: 35px;
     }
+    .basyazi{
+        font-size: 30px;
+    }
     
 }
-@media screen and (max-width:230px) {
+@media screen and (max-width:271px) {
+    .basyazi{
+        font-size: 26px;
+    }
+    
+}
+@media screen and (max-width:250px) {
     .oyunframeozel h2{
         font-size: 31px;
     }
     .oyunframe h2{
         font-size: 31px;
     }
-    
+    .basyazi{
+        font-size: 20px;
+    }
 }
 @media screen and (max-width:178px) {
     .oyunframeozel h2{
         font-size: 27px;
     }
     .oyunframe h2{
-        font-size: 27px;
+        font-size: 18px;
     }
     
 }
