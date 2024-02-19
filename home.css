@@ -235,7 +235,7 @@
         margin-top: -70px;
     }
 }
-@media screen and (max-width:290px) {
+@media screen and (max-width:295px) {
     .basyazi{
         font-size: 17px;
     }
@@ -248,6 +248,54 @@
         font-size: 12px;
         width: 175px;
         margin-left: -233px;
+        margin-top: -80px;
+    }
+}
+@media screen and (max-width:283px) {
+    .basyazi{
+        font-size: 16px;
+    }
+    .arayazi{
+        font-size: 12px;
+        margin-top: -245px;
+    }
+    #anabuton{
+        height: 40px;
+        font-size: 11px;
+        width: 175px;
+        margin-left: -230px;
+        margin-top: -80px;
+    }
+}
+@media screen and (max-width:276px) {
+    .basyazi{
+        font-size: 15px;
+    }
+    .arayazi{
+        font-size: 12px;
+        margin-top: -245px;
+    }
+    #anabuton{
+        height: 40px;
+        font-size: 11px;
+        width: 175px;
+        margin-left: -223px;
+        margin-top: -80px;
+    }
+}
+@media screen and (max-width:276px) {
+    .basyazi{
+        font-size: 14px;
+    }
+    .arayazi{
+        font-size: 11px;
+        margin-top: -245px;
+    }
+    #anabuton{
+        height: 40px;
+        font-size: 11px;
+        width: 175px;
+        margin-left: -216px;
         margin-top: -80px;
     }
 }
