@@ -39,6 +39,9 @@
 }
 
 @media screen and (max-width:1226px) {
+    .ilkparca{
+        margin-top: -100px;
+    }
     .basyazi{
         font-size: 52px;
     }
@@ -110,193 +113,161 @@
         font-size: 26px;
     }
     #anabuton{
-        margin-left: -330px;
+        margin-left: -320px;
         height: 50px;
     }
 }
-@media screen and (max-width:810px) {
+@media screen and (max-width:802px) {
     .basyazi{
-        font-size: 34px;
+        font-size: 36px;
+        letter-spacing: 7px;
     }
     .arayazi{
         font-size: 24px;
-    }
-    #anabuton{
-        margin-left: -315px;
-        height: 45px;
-    }
-}
-@media screen and (max-width:760px) {
-    .basyazi{
-        font-size: 32px;
-    }
-    .arayazi{
-        font-size: 24px;
-    }
-    #anabuton{
-        margin-left: -300px;
-        height: 45px;
-    }
-}
-@media screen and (max-width:600px) {
-    .basyazi{
-        font-size: 30px;
-    }
-    .arayazi{
-        font-size: 22px;
-    }
-    #anabuton{
-        margin-left: -295px;
-        height: 45px;
-    }
-}
-@media screen and (max-width:424px) {
-    .basyazi{
-        font-size: 30px;
-    }
-    .arayazi{
-        font-size: 22px;
-    }
-    #anabuton{
-        height: 45px;
-    }
-}
-@media screen and (max-width:400px) {
-    .basyazi{
-        font-size: 28px;
-    }
-    .arayazi{
-        font-size: 20px;
-    }
-    #anabuton{
-        height: 45px;
-        margin-left: -290px;
-    }
-}
-@media screen and (max-width:380px) {
-    .basyazi{
-        font-size: 27px;
-    }
-    #anabuton{
-        height: 45px;
-        margin-left: -285px;
-    }
-}
-@media screen and (max-width:356px) {
-    .basyazi{
-        font-size: 24px;
-    }
-    #anabuton{
-        height: 45px;
-        font-size: 19px;
-        margin-left: -275px;
-    }
-}
-@media screen and (max-width:340px) {
-    .basyazi{
-        font-size: 23px;
-    }
-    .arayazi{
-        font-size: 18px;
-    }
-    #anabuton{
-        height: 45px;
-        font-size: 17px;
-        margin-left: -270px;
-    }
-}
-@media screen and (max-width:340px) {
-    .basyazi{
-        font-size: 20px;
-    }
-    .arayazi{
-        font-size: 17px;
         margin-top: -215px;
     }
     #anabuton{
-        height: 45px;
-        font-size: 14px;
-        margin-left: -254px;
+        margin-left: -302px;
+        height: 50px;
         margin-top: -60px;
     }
 }
-@media screen and (max-width:310px) {
+@media screen and (max-width:747px) {
     .basyazi{
-        font-size: 19px;
+        font-size: 36px;
+        letter-spacing: 5px;
     }
     .arayazi{
-        font-size: 15px;
-        margin-top: -225px;
+        letter-spacing: 1px;
     }
     #anabuton{
-        height: 45px;
-        font-size: 14px;
-        margin-left: -248px;
-        margin-top: -70px;
+        margin-left: -290px;
+        height: 50px;
+        margin-top: -60px;
     }
 }
-@media screen and (max-width:295px) {
+@media screen and (max-width:700px) {
+    .arayazi{
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin-top: -215px;
+    }
     .basyazi{
-        font-size: 17px;
+        font-size: 33px;
+    }
+    #anabuton{
+        margin-left: -277px;
+    }
+}
+@media screen and (max-width:638px) {
+    .arayazi{
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin-top: -180px;
+    }
+    .basyazi{
+        font-size: 33px;
+    }
+    #anabuton{
+        margin-left: -277px;
+        margin-top: -30px;
+    }
+}
+@media screen and (max-width:356px) {
+    .arayazi{
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-top: -180px;
+    }
+    .basyazi{
+        font-size: 29px;
+        letter-spacing: 3px;
+    }
+    #anabuton{
+        margin-left: -245px;
+        margin-top: -30px;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:300px) {
+    .ilkparca{
+        margin-top: -150px;
     }
     .arayazi{
-        font-size: 13px;
-        margin-top: -245px;
+        font-size: 18px;
+        letter-spacing: 1px;
+        margin-top: -210px;
+    }
+    .basyazi{
+        font-size: 26px;
+        letter-spacing: 2px;
     }
     #anabuton{
-        height: 45px;
-        font-size: 12px;
-        width: 175px;
-        margin-left: -233px;
-        margin-top: -80px;
+        margin-left: -227px;
+        margin-top: -55px;
+        height: 40px;
+        font-size: 18px;
     }
 }
-@media screen and (max-width:283px) {
-    .basyazi{
+@media screen and (max-width:280px) {
+    .arayazi{
         font-size: 16px;
     }
-    .arayazi{
-        font-size: 12px;
-        margin-top: -245px;
+    .basyazi{
+        font-size: 24px;
     }
     #anabuton{
-        height: 40px;
-        font-size: 11px;
-        width: 175px;
-        margin-left: -230px;
-        margin-top: -80px;
+        height: 35px;
+        margin-left: -222px;
+        font-size: 17px;
     }
 }
-@media screen and (max-width:276px) {
-    .basyazi{
+@media screen and (max-width:248px) {
+    .ilkparca{
+        margin-top: -170px;
+    }
+    .arayazi{
         font-size: 15px;
+        margin-top: -220px;
     }
-    .arayazi{
-        font-size: 12px;
-        margin-top: -245px;
+    .basyazi{
+        font-size: 22px;
+        letter-spacing: 2px;
     }
     #anabuton{
-        height: 40px;
-        font-size: 11px;
-        width: 175px;
-        margin-left: -223px;
-        margin-top: -80px;
+        margin-left: -212px;
+        margin-top: -65px;
     }
 }
-@media screen and (max-width:276px) {
-    .basyazi{
-        font-size: 14px;
-    }
+@media screen and (max-width:235px) {
     .arayazi{
-        font-size: 11px;
-        margin-top: -245px;
+        font-size: 14px;
+        margin-top: -230px;
+    }
+    .basyazi{
+        font-size: 20px;
+        letter-spacing: 2px;
     }
     #anabuton{
-        height: 40px;
+        margin-left: -204px;
+        font-size: 14px;
+        margin-top: -75px;
+    }
+}
+@media screen and (max-width:224px) {
+    .arayazi{
+        font-size: 13px;
+        margin-top: -240px;
+    }
+    .basyazi{
+        font-size: 19px;
+        letter-spacing: 2px;
+    }
+    #anabuton{
+        margin-left: -200px;
         font-size: 11px;
-        width: 175px;
-        margin-left: -216px;
-        margin-top: -80px;
+        margin-top: -85px;
     }
 }
 
