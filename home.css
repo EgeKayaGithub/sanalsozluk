@@ -38,5 +38,167 @@
     position: absolute;
 }
 
+@media screen and (max-width:1226px) {
+    .basyazi{
+        font-size: 52px;
+    }
+    .arayazi{
+        font-size: 38px;
+    }
+    #anabuton{
+        margin-left: -390px;
+        height: 70px;
+    }
+}
+@media screen and (max-width:1140px) {
+    .basyazi{
+        font-size: 48px;
+    }
+    .arayazi{
+        font-size: 35px;
+    }
+    #anabuton{
+        margin-left: -375px;
+        height: 65px;
+    }
+    
+}
+
+@media screen and (max-width:1052px) {
+    .basyazi{
+        font-size: 45px;
+    }
+    .arayazi{
+        font-size: 32px;
+    }
+    #anabuton{
+        margin-left: -360px;
+        height: 60px;
+    }
+    
+}
+
+@media screen and (max-width:975px) {
+    .basyazi{
+        font-size: 42px;
+    }
+    .arayazi{
+        font-size: 29px;
+    }
+    #anabuton{
+        margin-left: -345px;
+        height: 55px;
+    }
+}
+@media screen and (max-width:900px) {
+    .basyazi{
+        font-size: 39px;
+    }
+    .arayazi{
+        font-size: 28px;
+    }
+    #anabuton{
+        margin-left: -330px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:861px) {
+    .basyazi{
+        font-size: 36px;
+    }
+    .arayazi{
+        font-size: 26px;
+    }
+    #anabuton{
+        margin-left: -330px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:810px) {
+    .basyazi{
+        font-size: 34px;
+    }
+    .arayazi{
+        font-size: 24px;
+    }
+    #anabuton{
+        margin-left: -315px;
+        height: 45px;
+    }
+}
+@media screen and (max-width:760px) {
+    .basyazi{
+        font-size: 32px;
+    }
+    .arayazi{
+        font-size: 24px;
+    }
+    #anabuton{
+        margin-left: -300px;
+        height: 45px;
+    }
+}
+@media screen and (max-width:600px) {
+    .basyazi{
+        font-size: 30px;
+    }
+    .arayazi{
+        font-size: 22px;
+    }
+    #anabuton{
+        margin-left: -295px;
+        height: 45px;
+    }
+}
+@media screen and (max-width:424px) {
+    .basyazi{
+        font-size: 30px;
+    }
+    .arayazi{
+        font-size: 22px;
+    }
+    #anabuton{
+        height: 45px;
+    }
+}
+@media screen and (max-width:400px) {
+    .basyazi{
+        font-size: 28px;
+    }
+    .arayazi{
+        font-size: 20px;
+    }
+    #anabuton{
+        height: 45px;
+        margin-left: -290px;
+    }
+}
+@media screen and (max-width:380px) {
+    .basyazi{
+        font-size: 27px;
+    }
+    #anabuton{
+        height: 45px;
+        margin-left: -285px;
+    }
+}
+@media screen and (max-width:380px) {
+    .basyazi{
+        font-size: 25px;
+    }
+    #anabuton{
+        height: 45px;
+        margin-left: -275px;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
