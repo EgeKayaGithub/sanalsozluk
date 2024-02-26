@@ -5,9 +5,7 @@ body{
   background-size: cover;
 }
 .sorucontainer{
-  width: 96%;
-  margin-left: 35px;
-  margin-top: 20px;
+  margin: 20px 35px 0 35px;
   position: relative;
   border: none;
   height: 320px;
@@ -35,26 +33,16 @@ body{
 }
 .secenekcontainers{
   display: flex;
-}
-.secenekcontainer1{
-  width: 900px;
-  height: 460px;
-  margin-left: 35px;
-  margin-top: 20px;
-  position: relative;
-  display: inline-block;
-}
-.secenekcontainer2{
-  width: 900px;
-  height: 460px;
-  margin-left: 50px;
-  margin-top: 20px;
-  position: relative;
+  flex-wrap: wrap;
+  padding: 35px;
+  gap: 8px;
 }
 .secenekler{
-  width: 100%;
+  width: 50%;
   height: 205px;
-  margin-top: 20px;
+  flex:1;
+  max-width: 50%;
+  min-width: calc(50% - 16px);
   border-radius: 100px;
   border: none;
   color: white;
@@ -114,23 +102,14 @@ h3{
   filter: brightness(93%);
   transition: 0.5s;
   color: white;
-  margin-left: 4%;
-  margin-right: -60px;
   background: linear-gradient(219.3deg, rgb(149, 0, 199) 4.7%, rgb(130, 0, 226) 22.9%, rgb(95, 0, 199) 43.2%, rgb(70, 0, 199) 63.9%, rgb(5, 0, 199) 85.1%, rgb(0, 95, 199) 106.8%);
-  margin-top: 5px;
   text-align: center;
 }
 .coingosterge .cikisbuton{
   border-radius: 20px;
-  display: inline-block;
-  position: absolute;
-  margin-top: -15px;
-  margin-left: 50px;
   font-size: 25px;
-  margin-top: 5px;
   color: white;
   text-shadow: -4px 7px 10px rgba(0,0,0,0.6);
-  background: rgb(34,193,195);
   border: none;
   filter: brightness(95%);
   transition: 0.5s;
@@ -169,7 +148,6 @@ h3{
   border: 3px solid brown;
   height: 70px;
   width: 300px;
-  margin-left: 605px;
   border-radius: 20px;
   background-color: black;
   position: absolute;
