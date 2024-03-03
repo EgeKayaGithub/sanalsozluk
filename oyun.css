@@ -105,7 +105,7 @@ h3{
   background: linear-gradient(219.3deg, rgb(149, 0, 199) 4.7%, rgb(130, 0, 226) 22.9%, rgb(95, 0, 199) 43.2%, rgb(70, 0, 199) 63.9%, rgb(5, 0, 199) 85.1%, rgb(0, 95, 199) 106.8%);
   text-align: center;
 }
-.coingosterge .cikisbuton{
+.cikisbuton{
   border-radius: 20px;
   font-size: 25px;
   color: white;
@@ -114,7 +114,8 @@ h3{
   filter: brightness(95%);
   transition: 0.5s;
   background: linear-gradient(219.3deg, rgb(149, 0, 199) 4.7%, rgb(130, 0, 226) 22.9%, rgb(95, 0, 199) 43.2%, rgb(70, 0, 199) 63.9%, rgb(5, 0, 199) 85.1%, rgb(0, 95, 199) 106.8%);
-  width: 200px;
+  max-width: 200px;
+  padding: 0 25px 0 25px;
 }
 .cikisbuton:hover{
   filter: brightness(100%);
@@ -123,44 +124,35 @@ h3{
 .oyunsecenek:hover{
   filter: brightness(100%);
 }
-.coingosterge{
-  display: inline-flex;
-  position: absolute;
-  margin-left: 80%;
-  display: flex;
-  margin-top: -45px;
-  justify-content: space-between;
-}
 .coinimg{
   display: inline-block;
   width: 55px;
-  margin-top: -5px;
-  
+  margin-right: 10px;
 }
-.coingosterge h2{
+.bottomSection .right h2{
   display: inline;
   color: white;
-  position: absolute;
   margin-top: 5px;
-  margin-left: -115px;
 }
 .sayac{
   border: 3px solid brown;
   height: 70px;
-  width: 300px;
   border-radius: 20px;
   background-color: black;
-  position: absolute;
-  display: inline-flex;
+  display: flex;
+  min-width: fit-content;
+  flex-grow: 1;
+  flex-shrink: 0;
   align-items: center;
   justify-content: center;
+  margin: 0 560px 0 560px; /*YUKARI SAĞ AŞAĞI SOL  SAAT YÖNÜ*/
 }
 .sayac h2{
-  position: absolute;
   font-size: 50px;
   font-family: 'LCDMono2', sans-serif;
   color: white;
   margin-top: 6px;
+  text-align: center;
 }
 .yanlisGosterge{
   margin-top: -70px;
@@ -174,4 +166,18 @@ h3{
   -webkit-box-shadow: -2px 24px 73px -12px rgba(0,0,0,0.84);
   -moz-box-shadow: -2px 24px 73px -12px rgba(0,0,0,0.84);
   box-shadow: -2px 24px 73px -12px rgba(0,0,0,0.84);
+}
+.bottomSection{
+  display: flex;
+  flex-wrap: nowrap;
+  padding-right: 50px;
+  padding-left: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width:1400px) {
+  .bottomSection{
+    flex-direction: column;
+  }
 }
