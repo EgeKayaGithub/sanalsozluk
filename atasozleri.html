@@ -29,42 +29,78 @@
     </script>
 </head>
 <body> 
-<audio src="arkafonmuzik.MP3" id="arkaFonMuzik"></audio>
-<div class="soruinfo">
-  <div class="progress ilerlemeBari animate__animated animate__fadeInDownBig">
-    <h2 class="progressbaslik">İlerleme Seviyesi</h2>
-    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%;"></div>
-  </div>
-</div>
-
-<div class="sorucontainer animate__animated animate__fadeInDownBig">
-  <h2 class="soru">Soru Gelecek Alan</h2>
-</div>
-
-
-<div class="secenekcontainers">
-  <div class="secenekcontainer1">
-    <button class="secenekler animate__animated animate__fadeInLeftBig">Seçenek 1</button>
-    <button class="secenekler animate__animated animate__fadeInLeftBig">Seçenek 2</button>
-  </div>
-  <div class="secenekcontainer2">
-    <button class="secenekler animate__animated animate__fadeInRightBig">Seçenek 3</button>
-    <button class="secenekler animate__animated animate__fadeInRightBig">Seçenek 4</button>
-  </div>
-</div>
-</div>
-
-<div class="oyunsecenekleri">
-  <button class="sesacmakapama oyunsecenek animate__animated animate__fadeInBottomLeft" title="Ses Açma/Kapama" onclick="toggleSound()"><i class="fa-solid fa-volume-off"></i></button> <!-- !  <i class="fa-solid fa-volume-high"></i>-->
-  <button class="oyunsecenek animate__animated animate__fadeInBottomRight" title="Soruyu Atla" id="soruyuAtlaBtn"><i class="fa-solid fa-forward"></i></button>
-  <div class="sayac animate__animated animate__fadeInUp"><h2 id="sure">00:00</h2></div>
-  <div class="coingosterge animate__animated animate__fadeInBottomLeft">
-    <h2 id="coinSayisi" title="Para Miktarı">00000</h2>
-    <img src="coin.jpg" class="coinimg" alt="paraicon" title="Para Miktarı">  
-    <a href="#" onclick="cikisYapma()" class="animate__animated animate__fadeInBottomRight"><button class="cikisbuton" title="Çıkış Yap">Çıkış Yap</button></a>
+  <audio src="arkafonmuzik.MP3" id="arkaFonMuzik"></audio>
+  <div class="soruinfo">
+    <div
+      class="progress ilerlemeBari animate__animated animate__fadeInDownBig"
+    >
+      <h2 class="progressbaslik">İlerleme Seviyesi</h2>
+      <div
+        class="progress-bar progress-bar-striped progress-bar-animated"
+        role="progressbar"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+        style="width: 0%"
+      ></div>
+    </div>
   </div>
 
-</div>
+  <div class="sorucontainer animate__animated animate__fadeInDownBig">
+    <h2 class="soru">Soru Gelecek Alan</h2>
+  </div>
+
+  <div class="secenekcontainers">
+    <button class="secenekler animate__animated animate__fadeInLeftBig">
+      Seçenek 1
+    </button>
+    <button class="secenekler animate__animated animate__fadeInLeftBig">
+      Seçenek 2
+    </button>
+    <button class="secenekler animate__animated animate__fadeInRightBig">
+      Seçenek 3
+    </button>
+    <button class="secenekler animate__animated animate__fadeInRightBig">
+      Seçenek 4
+    </button>
+  </div>
+
+  <div class="bottomSection">
+    <div class="left">
+      <button
+        class="sesacmakapama oyunsecenek animate__animated animate__fadeInBottomLeft"
+        title="Ses Açma/Kapama"
+        onclick="toggleSound()">
+        <i class="fa-solid fa-volume-off"></i>
+      </button>
+
+      <button
+        class="oyunsecenek animate__animated animate__fadeInBottomRight"
+        title="Soruyu Atla"
+        id="soruyuAtlaBtn"
+      >
+        <i class="fa-solid fa-forward"></i>
+      </button>
+    </div>
+    <div class="sayac animate__animated animate__fadeInUp">
+      <h2 id="sure">00:00</h2>
+    </div>
+    <div class="right animate__animated animate__fadeInBottomRight">
+      <h2 id="coinSayisi" title="Para Miktarı">00000</h2>
+      <img
+        src="coin.jpg"
+        class="coinimg"
+        alt="paraicon"
+        title="Para Miktarı"
+      />
+      <a
+        href="#"
+        onclick="cikisYapma()"
+        class="animate__animated animate__fadeInBottomRight"
+        ><button class="cikisbuton" title="Çıkış Yap">Çıkış Yap</button></a
+      >
+    </div>
+  </div>
 <script src="coin.js"></script>
 <script src="atasozlerisorular.js"></script>
 </body>
